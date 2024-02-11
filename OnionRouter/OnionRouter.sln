@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OnionRouter", "OnionRouter.vcxproj", "{A01610D2-D83A-4BB1-9BE0-17F8F016F467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Debug|x64.ActiveCfg = Debug|x64
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Debug|x64.Build.0 = Debug|x64
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Debug|x86.ActiveCfg = Debug|Win32
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Debug|x86.Build.0 = Debug|Win32
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Release|x64.ActiveCfg = Release|x64
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Release|x64.Build.0 = Release|x64
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Release|x86.ActiveCfg = Release|Win32
+		{A01610D2-D83A-4BB1-9BE0-17F8F016F467}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA767803-199D-415A-B5C0-A3705E60A144}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<Page x:Class="Client.ChatPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="#121212" Name="ChatPage_Grid">
+        <Frame Name="Navigation" NavigationUIVisibility="Hidden"/>
+        <TextBlock Name ="Logo_TB" HorizontalAlignment="Center" Margin="0,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="426" Height="177" FontSize="120" TextAlignment="Center" Text="Torra" Background="#2e274b" Foreground="White"/>
+        <TextBlock Name="Username_TB" HorizontalAlignment="Left" Margin="994,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="488" TextAlignment="Center" FontSize="80" Text="Username" Foreground="White"/>
+        <TextBox  Name="Username_box" HorizontalAlignment="Center" Margin="0,791,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="690" Height="108" Background="#2e274b" Foreground="White" FontSize="70"/>
+        <Button Name="Login_button" Content="Send" HorizontalAlignment="Left" Margin="1068,904,0,0" VerticalAlignment="Top" Width="488" Height="138" FontSize="80" Background="#2e274b" Foreground="White" Click="SendMsgChat_Event"/>
+        <Button Name="Return_button" Content="Return" HorizontalAlignment="Left" Margin="377,904,0,0" VerticalAlignment="Top" Width="488" Height="138" FontSize="80" Background="#2e274b" Foreground="White" Click="exit_Event"/>
+        <RichTextBox Margin="404,302,960,299">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Name="textbox1" AcceptsReturn="True" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Background="#2e274b" Foreground="White" Margin="404,300,960,301">
+            <FlowDocument>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox x:Name="textbox2" AcceptsReturn="True" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Background="#2e274b" Foreground="White" Margin="960,300,404,300">
+            <FlowDocument>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBlock x:Name="Username_TB_Copy" HorizontalAlignment="Left" Margin="438,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="488" TextAlignment="Center" FontSize="80" Text="You" Foreground="White"/>
+    </Grid>
+</Page>

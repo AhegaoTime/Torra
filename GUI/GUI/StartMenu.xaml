@@ -1,0 +1,24 @@
+﻿﻿<Page x:Class="GUI.StartMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="StartMenu"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="#121212" Name="StartMenu_Grid">
+        <Frame Name="Navigation" NavigationUIVisibility="Hidden" />
+        <Button Name="Login_button" Content="Login" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top" Width="488" Height="138" FontSize="80" Background="#2e274b" Foreground="White" Click="login_Event" />
+        <Button Name="Singup_button" Content="Singup" HorizontalAlignment="Center" Margin="0,634,0,0" VerticalAlignment="Top" Width="488" Height="138" FontSize="80" Background="#2e274b" Foreground="White" Click="singup_Event"/>
+        <Button Name="Exit_button" Content="Exit" HorizontalAlignment="Center" Margin="0,815,0,0" VerticalAlignment="Top" Width="488" Height="138" FontSize="80" Background="#2e274b" Foreground="White" Click="exit_Event"/>
+        <TextBlock Name ="Logo_TB" HorizontalAlignment="Center" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="866" Height="177" FontSize="120" TextAlignment="Center" Text="Edwinir Trivia" Background="#2e274b" Foreground="White"/>
+    </Grid>
+</Page>
